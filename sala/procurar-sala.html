@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar Sala - Gestão Escolar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Gestão Escolar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Aluno</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="inserir-aluno.html">Matricular Novo Aluno</a></li>
+                            <li><a class="dropdown-item" href="procurar-aluno.html">Acessar / Consultar Aluno</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Professor</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="inserir-professor.html">Cadastrar Professor</a></li>
+                            <li><a class="dropdown-item" href="procurar-professor.html">Consultar Professor</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sala</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="inserir-sala.html">Cadastrar Sala</a></li>
+                            <li><a class="dropdown-item active" href="procurar-sala.html">Consultar Sala</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h1 class="h3 mb-0">Consultar Sala</h1>
+            <a href="inserir-sala.html" class="btn btn-primary">Cadastrar sala</a>
+        </div>
+
+        <form action="procurar-sala.html" method="get" class="mb-4">
+            <div class="input-group">
+                <input type="search" class="form-control" id="busca" name="busca" placeholder="Digite o nome da sala" aria-label="Buscar sala por nome">
+                <button class="btn btn-outline-primary" type="submit">Procurar</button>
+            </div>
+        </form>
+
+        <div class="card shadow-sm">
+            <div class="table-responsive">
+                <table class="table table-striped table-hover align-middle mb-0">
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Capacidade</th>
+                            <th scope="col">Área (m²)</th>
+                            <th scope="col">Projetor</th>
+                            <th scope="col" class="text-end">Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                            <tr>
+                                <td>Sala 101</td>
+                                <td>40</td>
+                                <td>48,50</td>
+                                <td><span class="badge text-bg-success">Sim</span></td>
+                                <td class="text-end">
+                                    <a href="alterar-sala.html" class="btn btn-sm btn-outline-warning">Alterar</a>
+                                    <a href="excluir-sala.html" class="btn btn-sm btn-outline-danger">Excluir</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Sala 203</td>
+                                <td>35</td>
+                                <td>42,00</td>
+                                <td><span class="badge text-bg-secondary">Não</span></td>
+                                <td class="text-end">
+                                    <a href="alterar-sala.html" class="btn btn-sm btn-outline-warning">Alterar</a>
+                                    <a href="excluir-sala.html" class="btn btn-sm btn-outline-danger">Excluir</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Laboratório de Informática</td>
+                                <td>30</td>
+                                <td>62,00</td>
+                                <td><span class="badge text-bg-success">Sim</span></td>
+                                <td class="text-end">
+                                    <a href="alterar-sala.html" class="btn btn-sm btn-outline-warning">Alterar</a>
+                                    <a href="excluir-sala.html" class="btn btn-sm btn-outline-danger">Excluir</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Biblioteca</td>
+                                <td>60</td>
+                                <td>90,00</td>
+                                <td><span class="badge text-bg-secondary">Não</span></td>
+                                <td class="text-end">
+                                    <a href="alterar-sala.html" class="btn btn-sm btn-outline-warning">Alterar</a>
+                                    <a href="excluir-sala.html" class="btn btn-sm btn-outline-danger">Excluir</a>
+                                </td>
+                            </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

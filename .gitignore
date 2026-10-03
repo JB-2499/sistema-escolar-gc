@@ -1,4 +1,5 @@
-/.idea
-*~
-*.un
 *.swp
+*.un
+*.un~
+*~
+/.idea
