@@ -1,8 +1,10 @@
-# sistema-escolar-gc
+# Gestão Escolar
 
-Projeto em grupo para praticar **HTML e Bootstrap**. É um sistema de gestão escolar com três áreas (Aluno, Professor e Sala), cada uma com as telas de um CRUD.
+## Objetivo
 
-O projeto usa apenas classes do Bootstrap 5.3.3, carregado por CDN. Não há CSS nem JavaScript próprio, nem backend: os formulários não salvam dados, e as telas de consulta, alteração e exclusão mostram informações de exemplo.
+Treinar **Git** e o **trabalho em equipe com versionamento**: branches por integrante, commits, merges e resolução de conflitos.
+
+O produto usado para isso é um sistema de gestão escolar com três áreas (Aluno, Professor e Sala), cada uma com as telas de um CRUD, feitas só com classes do Bootstrap 5.3.3 (por CDN). Não há CSS nem JavaScript próprio, nem backend: os formulários não salvam dados, e as telas de consulta, alteração e exclusão mostram informações de exemplo.
 
 ## Estrutura
 
